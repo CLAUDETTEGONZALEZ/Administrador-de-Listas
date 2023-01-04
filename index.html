@@ -22,58 +22,75 @@
 </head>
 
 <body>
-    <table align="center">
-        <tr>
-            <td>
-                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
-
-                    <div>
-                        <label>Name</label><label class="validation-error hide" id="nameValidationError">This field is
-                            required.</label>
-                        <input type="text" name="name" id="name">
-                    </div>
-
-                    <div>
-                        <label>last Name</label>
-                        <input type="text" name="lastName" id="lastName">
-                    </div>
-
-                    <div>
-                        <label>Age</label>
-                        <input type="text" name="age" id="age">
-                    </div>
-                    <br>
-                    <div class="form-action-buttons">
-                        <input type="submit" value="Submit">
-                    </div>
-
-                </form>
-            </td>
-    </table>
-    <!-- Aquí comienza la Tabla del formulario -->
-    <td>
-        <table class="list" id="alumnList" align="center">
-            <thead>
+    <div class="container">
+        <nav class="navbar">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#beewheel">Bee Wheel</a></li>
+            <li><a href="#list-administrator">List Administrator</a></li>
+          </ul>
+        </nav>
+        <section id="home">
+          <h1>Welcome</h1>
+        </section>
+        <section id="beewheel">
+          <h1>About</h1>
+          <button onclick="location.href='http://127.0.0.1:5504/index.html'">Llévame a otro lado</button>
+        </section>
+        <section id="list-administrator">
+            <table align="center">
                 <tr>
-                    <th>Name</th>
-                    <th>Last Name</th>
-                    <th>Age</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-        </table>
-    </td>
-    </tr>
-
-    <br>
-    <br>
-    <div id="btns" align="center">
-        <button>Upload list</button>
-        <button>Save list</button>
-    </div>
+                    <td>
+                        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+        
+                            <div>
+                                <label>Name</label><label class="validation-error hide" id="nameValidationError">This field is
+                                    required.</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+        
+                            <div>
+                                <label>last Name</label>
+                                <input type="text" name="lastName" id="lastName">
+                            </div>
+        
+                            <div>
+                                <label>Age</label>
+                                <input type="text" name="age" id="age">
+                            </div>
+                            <br>
+                            <div class="form-action-buttons">
+                                <input type="submit" value="Submit">
+                            </div>
+        
+                        </form>
+                    </td>
+            </table>
+            <td>
+                <table class="list" id="alumnList" align="center">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Last Name</th>
+                            <th>Age</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+        
+                    </tbody>
+                </table>
+            </td>
+            </tr>
+        
+            <br>
+            <br>
+            <div id="btns" align="center">
+                <button>Upload list</button>
+                <button>Save list</button>
+            </div>
+        </section>
+      </div>
     <script src="index.js" type="text/javascript"></script>
 </body>
 </html>
