@@ -5,7 +5,7 @@
   
   body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #FFF59D;
+    background: #000;
     color: #fff;
     height: 100vh;
     line-height: 1.6;
@@ -108,12 +108,12 @@ table.list thead>tr {
 
 input[type=text],
 input[type=number] {
-    width: 50vh;
+    width: 80vh;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border-radius: 4px;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 input[type=submit] {
@@ -145,4 +145,17 @@ label.validation-error {
 
 .hide {
     display: none;
+}
+
+
+
+h1{
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 30vh;
+  font-weight: 800;
+  color: transparent;
+  background-image: url(https://media.giphy.com/media/MdM6yOgUWBPQkTm2du/giphy.gif);
+  background-position: center;
+  -webkit-background-clip: text;
 }
