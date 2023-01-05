@@ -1,3 +1,9 @@
+function redirect() {
+    setTimeout(function () {
+      document.location.href =`${window.location.origin}/wheel.html`
+    }, 2000);
+  }
+
 var selectedRow = null;
 
 function onFormSubmit() {

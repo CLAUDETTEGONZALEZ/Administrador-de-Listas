@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFF59D;
+    width: 100%;
+    height: 110vh;
+    cursor: url(/images/icons8-bee-30.png), auto;
+    font-family: 'Lobster', cursive;
+}
+
+.container {
+    padding: 10px;
+    width: 980px;
+    max-width: calc(100% - 20px);
+    margin: auto;
+    margin-top: 50px;
+    margin-top: 0px;
+    color: #fff;
+    font-family: 'Lobster';
+}
+
+.concursantes {
+    margin-top: 20px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+canvas {
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.roulette {
+    margin-top: 5%;
+}
+
+button {
+    font-family: 'Lobster';
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #804000;
+    color: #fff;
+    border-style: none;
+    border-radius: 10px;
+    z-index: 10;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.mark-winner {
+    position: absolute;
+    clip-path: polygon(0 10px, 60px 0, 60px 20px);
+    background: black;
+    width: 60px;
+    height: 20px;
+    top: 50%;
+    right: 18%;
+    z-index: 10;
+    box-shadow: 0 0 3px #33333399;
+}
+
+.form {
+    position: relative;
+    margin-bottom: -5%;
+    display: flex;
+    height: 10vh;
+    width: 60vw;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text] {
+    padding: 12px;
+    border-radius: 8px;
+    border-color: #804000;
+}
+
+::placeholder {
+    font-family: 'Lobster';
+}
+
+#logo {
+    height: 53px;
+    width: 160px;
+    margin-right: 10px;
+}
