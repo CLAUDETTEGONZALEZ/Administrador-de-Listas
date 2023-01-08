@@ -5,7 +5,7 @@
   
   body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #000;
+    background: #FFF59D;
     color: #fff;
     height: 100vh;
     line-height: 1.6;
@@ -15,7 +15,6 @@
   .container {
     width: 100%;
     height: 100%;
-    /* CSS Smooth Scroll */
     overflow-y: scroll; 
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
@@ -32,7 +31,7 @@
     display: flex;
     width: 100%;
     height: 60px;
-    background: rgba(0,0,0,0.7);
+    background: #bf790fad;
   }
   
   .navbar ul {
@@ -54,7 +53,7 @@
   }
   
   .navbar ul li a:hover {
-    color: skyblue;
+    color: #804000;
   }
   
   section {
@@ -66,14 +65,22 @@
     width: 100%;
     height: 100vh;
    
-    /* Scroll Snap */
-    /* scroll-snap-align: center; */
   }
+h1{
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 15vw;
+  font-weight: 800;
+  color: transparent;
+  background-image: url(https://secure.static.tumblr.com/490f5829d7bf754914a01e5d20de30f3/7h14mt6/492o6brnw/tumblr_static_tumblr_static__640.gif);
+  background-position: center;
+  -webkit-background-clip: text;
 
- section#home{
-  background-color: #000;
- }
-
+ } 
+h2{
+  font-size: 5vw;
+  color: #BF780F;
+}
 table {
     width: 50vh;
 }
@@ -87,8 +94,9 @@ table.list {
 }
 
 td {
+  background-color: #bf790f5a;
     position: relative;
-    border: 1px solid #dddddd;
+    border: 3px solid #804000;
     text-align: left;
     padding: 8px;
 }
@@ -96,19 +104,25 @@ td {
 th {
     width: 50%;
     height: 50%;
-    border: 1px solid #dddddd;
+    border: 3px solid #804000;
     text-align: left;
     padding: 8px;
 }
 
 tr:nth-child(even),
 table.list thead>tr {
-    background-color: #dddddd;
+    background-color: #804000;
+}
+label{
+  font-;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 input[type=text],
 input[type=number] {
-    width: 80vh;
+    border:transparent;
+    width: 50vh;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -118,12 +132,13 @@ input[type=number] {
 
 input[type=submit] {
     width: 50%;
-    background-color: #ddd;
-    color: #000;
+    background-color: #BF780F;
+    color: #fff;
     padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
+    margin: 4px 0;
+    border: solid #804000;
+    font-size: medium;
+    border-radius: 20px;
     cursor: pointer;
 }
 
@@ -133,9 +148,9 @@ form div.form-action-buttons {
 
 a {
     cursor: pointer;
-    text-decoration: underline;
-    color: #0000ee;
+    color: #ffff;
     margin-right: 4px;
+    text-decoration: underline;
 }
 
 label.validation-error {
@@ -147,13 +162,20 @@ label.validation-error {
     display: none;
 }
 
-h1{
-  font-family: sans-serif;
-  text-align: center;
-  font-size: 15vw;
-  font-weight: 800;
-  color: transparent;
-  background-image: url(https://secure.static.tumblr.com/490f5829d7bf754914a01e5d20de30f3/7h14mt6/492o6brnw/tumblr_static_tumblr_static__640.gif);
-  background-position: center;
-  -webkit-background-clip: text;
+button{
+ color: #ffff;
+ margin: 20px;
+ outline: none;
+ width: 130px;
+ height: 40px;
+ padding: 10px 25px;
+ border: 2px solid #804000;
+ border-radius: 20px;
+ font-family: sans-serif;
+ font-size: 15px;
+ font-weight: 500;
+ background:#BF780F;
+ cursor: pointer;
+ transition: all 0.3s ease;
+ display: inline-block;
 }
