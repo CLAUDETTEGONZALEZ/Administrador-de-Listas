@@ -147,15 +147,13 @@ label.validation-error {
     display: none;
 }
 
-
-
 h1{
   font-family: sans-serif;
   text-align: center;
-  font-size: 30vh;
+  font-size: 15vw;
   font-weight: 800;
   color: transparent;
-  background-image: url(https://media.giphy.com/media/MdM6yOgUWBPQkTm2du/giphy.gif);
+  background-image: url(https://secure.static.tumblr.com/490f5829d7bf754914a01e5d20de30f3/7h14mt6/492o6brnw/tumblr_static_tumblr_static__640.gif);
   background-position: center;
   -webkit-background-clip: text;
 }
